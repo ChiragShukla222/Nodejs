@@ -1,10 +1,19 @@
-const homeData=(req,res)=>{
-    res.send("<h1>heloo</h1>");
+const stuAbout=async(req,res)=>{
+    res.render("about");
 }
-const about=(req,res)=>{
-    res.send("<h1>about me</h2>")
+const stucontact=async(req,res)=>{
+    res.render("contact")
 }
+const stuHome=async(req,res)=>{
+    res.render("home")
+}
+const stuService=async(req,res)=>{
+    res.render("service")
+}
+
 module.exports ={
-    homeData,
-    about,
+    stuHome,
+    stuAbout,
+    stuService,
+    stucontact
 }

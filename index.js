@@ -1,14 +1,15 @@
+// to import express
 const express = require("express");
 const app = express();
-const PORT = 8000;
-app.set("view engine",'ejs')
-const stuRoute = require("../NodeJS/routes/studentsRoute");
-const { default: mongoose } = require("mongoose");
+ //to set the ejs engine
+ app.set("view engine","ejs")
+//  to make route connnection
 
-mongoose.connect('mongodb://127.0.0.1:27017/NodeJs').then
-
+const stuRoute =require("../NodeJS/routes/stuRoute");
+//to use the stuRoute
 app.use(stuRoute);
+const PORT=8000;
 
 app.listen(PORT,()=>{
-    console.log("server is runing on 8000")
+    console.log(`port run on ${PORT} !!!`)
 })
