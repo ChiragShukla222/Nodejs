@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <a href="/">Home</a>
+    <a href="/insert">Insert</a>    
+    <a href="/display">Display</a>    
+    <a href="/contact">Contact</a>  
+    <a href="/update">update</a>  
+                    <h1>Display data</h1>
+                    <hr size="4" color="yellow">
+
+                    <table align="center" border="1" bgcolor="yellow">
+                            <tr>
+                                <th>Rollno</th>
+                                <th>Name</th>
+                                <th>City</th>
+                                <th>Fees</th>
+                            </tr>
+                            <%
+                            Data.map((key)=>{
+                                %>
+                                <tr>
+
+                                        <td><%= key.rollno%></td>
+                                        <td><%= key.name%></td>
+                                        <td><%= key.city%></td>
+                                        <td><%= key.fees%></td>
+
+                                </tr>
+                            
+                            
+                           <% 
+                            })
+                            %>
+
+
+                    </table>
+                    wwww.zyx.com
+</body>
+</html>
